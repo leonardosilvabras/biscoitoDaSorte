@@ -26,12 +26,12 @@ body {
 
   font-size: 1.6rem;
 
-  .hide {
-    display: none;
-  }
-
   main {
     section#Lucky {
+      .hide {
+        display: none;
+      }
+
       figure {
         display: flex;
         flex-flow: column nowrap;
@@ -59,6 +59,35 @@ body {
 
         img {
           width: 100%;
+          cursor: pointer;
+        }
+      }
+
+      figure.openCokie {
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Dancing Script;
+          font-size: 2.4rem;
+          width: 27rem;
+        }
+
+        img {
+          margin: 6rem 0  6rem 0;
+        }
+
+        button {
+          display: flex;
+          padding: 1.6rem;
+          align-items: flex-start;
+          
+          gap: 1rem;
+          border: none;
+          border-radius: .4rem;
+          
+          background: #ff9500;
+          color: #fff;
+          cursor: pointer;
         }
       }
     }
